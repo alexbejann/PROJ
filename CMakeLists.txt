@@ -193,20 +193,20 @@ endif()
 
 option(ENABLE_TIFF "Enable TIFF support to read some grids" ON)
 mark_as_advanced(ENABLE_TIFF)
-set(TIFF_ENABLED FALSE)
-if(ENABLE_TIFF)
-  find_package(TIFF REQUIRED)
-  if(TIFF_FOUND)
-    set(TIFF_ENABLED TRUE)
-  else()
-    message(SEND_ERROR
-      "libtiff dependency not found! Use ENABLE_TIFF=OFF to force it off")
-  endif()
-else()
-  message(WARNING
-    "TIFF support is not enabled and will result in the inability to read "
-    "some grids")
-endif()
+set(TIFF_ENABLED TRUE)
+#if(ENABLE_TIFF)
+#  find_package(TIFF REQUIRED)
+#  if(TIFF_FOUND)
+#    set(TIFF_ENABLED TRUE)
+#  else()
+#    message(SEND_ERROR
+#      "libtiff dependency not found! Use ENABLE_TIFF=OFF to force it off")
+#  endif()
+#else()
+#  message(WARNING
+#    "TIFF support is not enabled and will result in the inability to read "
+#    "some grids")
+#endif()
 
 ################################################################################
 # Check for curl

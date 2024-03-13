@@ -27,3 +27,4 @@
 
 /* Version number of package */
 /* #undef VERSION */
+#define TIFF_ENABLED 1
