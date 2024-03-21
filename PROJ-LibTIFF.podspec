@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name    = "PROJ-LibTIFF"
-  s.version = "9.3.1"
+  s.version = "9.3.1.1"
   s.summary = "PROJ coordinate transformation software library. With LibTIFF support."
   s.description = <<-DESC
 PROJ is a generic coordinate transformation software that transforms geospatial coordinates from one coordinate reference system (CRS) to another. This includes cartographic projections as well as geodetic transformations. PROJ is released under the X/MIT open source license
@@ -25,6 +25,6 @@ The LibTIFF software provides support for the Tag Image File Format (TIFF), a wi
   s.resource_bundle = { 'PROJ' => ['proj.db'] }
 
   s.dependency 'PROJ-include', '~> 9.3.0'
-  s.dependency 'libtiff', '~> 4.6.2'
+  s.dependency 'libtiff', '~> 4.6.2.1'
 
 end
